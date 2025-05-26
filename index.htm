@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <title>GraphQl Dashboard</title>
+</head>
+<body>
+    <div id="titrePage" class="titrePage">Welcome to <span>Zone01 Oujda!</span></div>
+
+    <div id="loginForm" class="login-form">
+        <div class="infoUsername">
+            <label for="username">Name or Email</label>
+            <input type="text" id="username" placeholder="Enter your name or email">
+        </div>
+    
+        <div class="infoPassword">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <div id="errorMessage"></div>
+        <button type="button" id="submitButton">Login</button>
+    </div>
+
+    <div id="dashboard" class="dashboard" style="display: none;">
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li><a href="#profile" class="tab-link active">Profile</a></li>
+                <li><a href="#xp-graph" class="tab-link">XP Progress</a></li>
+                <li><a href="#audit-graph" class="tab-link">Audits</a></li>
+                <li><a href="#skills" class="tab-link">Skills</a></li>
+            </ul>
+            
+            <div class="tab-content-wrapper">
+                <div id="profile" class="tab-content active">
+                </div>
+                
+                <div id="xp-graph" class="tab-content">
+                </div>
+                
+                <div id="audit-graph" class="tab-content">
+                </div>
+                
+                <div id="skills" class="tab-content">
+                </div>
+            </div>
+        </div>
+        
+        <button id="logoutButton" class="logout-button">Logout</button>
+    </div>
+</body>
+</html>
